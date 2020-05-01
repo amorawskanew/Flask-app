@@ -39,6 +39,6 @@ def user(username):
                            chat_messages=messages)
 
 
-        app.run(host=os.getenv("IP", "0.0.0.0"),
+app.run(host=os.getenv("IP", "127.0.0.1"),
         port=int(os.getenv("PORT", "5000")), debug=False)
         
